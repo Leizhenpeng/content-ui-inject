@@ -11,7 +11,7 @@ export interface IsolatedElementOptions {
   name: string
   /**
    * See [`ShadowRoot.mode`](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/mode).
-   * @default 'closed'
+   * @default 'open'
    */
   mode?: 'open' | 'closed'
   /**
