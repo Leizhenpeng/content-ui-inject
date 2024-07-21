@@ -13,7 +13,7 @@
     "url": "git+https://github.com/leizhenpeng/content-ui-inject.git"
   },
   "bugs": "https://github.com/leizhenpeng/content-ui-inject/issues",
-  "keywords": [],
+  "keywords": ["chrome-extension", "shadow-dom", "content-ui", "injection"],
   "sideEffects": false,
   "exports": {
     ".": {
