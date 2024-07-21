@@ -23,6 +23,10 @@ const app = await createShadowRootUI({
   styleOptions: {
     textContent: tailwindcssOutput,
   },
+  onCustomize: (uiContainer, shadowHost) => {
+    shadowHost.style.zIndex = '9999'
+    shadowHost.id = 'xxx'
+  },
   onMount: (uiContainer) => {
     createRoot(uiContainer).render(<App />)
   },

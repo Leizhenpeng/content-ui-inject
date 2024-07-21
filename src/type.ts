@@ -90,11 +90,17 @@ export type ContentUIOptions<TMounted> = PositionOptions & InjectOptions & {
 
 export type ShadowUIOptions<TMounted> =
   ContentUIOptions<TMounted> & IsolatedElementOptions & {
+
     onMount: (
       uiContainer: HTMLElement,
       shadow: ShadowRoot,
       shadowHost: HTMLElement,
     ) => TMounted
+
+    onCustomize?: (
+      uiContainer: HTMLElement,
+      shadowHost: HTMLElement,
+    ) => void
   }
 
 export interface UIInstance<TMounted> {

@@ -19,6 +19,9 @@ export async function createShadowRootUI<TMounted>(
     eventIsolation: options.eventIsolation ?? false,
   })
 
+  if (options.onCustomize)
+    options.onCustomize(contentContainer, hostElement)
+
   let mounted: TMounted | undefined
 
   const mount = () => {
