@@ -16,7 +16,7 @@ export async function createShadowRootUI<TMounted>(
     name: options.name,
     styleOptions: options.styleOptions,
     mode: options.mode ?? 'open',
-    eventIsolation: options.eventIsolation,
+    eventIsolation: options.eventIsolation ?? false,
   })
 
   let mounted: TMounted | undefined
