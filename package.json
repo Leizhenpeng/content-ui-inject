@@ -1,7 +1,7 @@
 {
   "name": "content-ui-inject",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "packageManager": "pnpm@9.1.1",
   "description": "Boost content-ui injection for better extension developer experience.",
   "author": "leizhenpeng <laolei@forkway.cn>",
@@ -13,7 +13,12 @@
     "url": "git+https://github.com/leizhenpeng/content-ui-inject.git"
   },
   "bugs": "https://github.com/leizhenpeng/content-ui-inject/issues",
-  "keywords": ["chrome-extension", "shadow-dom", "content-ui", "injection"],
+  "keywords": [
+    "chrome-extension",
+    "shadow-dom",
+    "content-ui",
+    "injection"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
