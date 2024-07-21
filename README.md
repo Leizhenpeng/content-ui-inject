@@ -8,6 +8,28 @@
 
 Boost content-ui injection for better extension developer experience.
 
+## Quick start
+
+1. Inject shadowRoot to content-ui
+
+```tsx
+import { createShadowRootUI } from 'content-ui-injector'
+const app = await createShadowRootUI({
+  name: 'react-boilerplate',
+
+  position: 'inline',
+  injectAnchor: 'body',
+  injectMode: 'before',
+  styleOptions: {
+    textContent: tailwindcssOutput,
+  },
+  onMount: (uiContainer) => {
+    createRoot(uiContainer).render(<App />)
+  },
+})
+
+app.mount()
+```
 ## License
 
 [MIT](./LICENSE) License © 2023-PRESENT [leizhenpeng](https://github.com/leizhenpeng)
